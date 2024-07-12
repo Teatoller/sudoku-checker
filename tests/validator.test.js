@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
-const { validateSudoku } = require('../src/validator');
+// test.js
+import { validateSudoku } from '../src/validator';
 
 test('valid sudoku board', () => {
   const validBoard = [

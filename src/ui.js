@@ -12,7 +12,7 @@ const createBoardFromInput = (input) => {
     result.textContent = isValid ? 'Valid Sudoku!' : 'Invalid Sudoku!';
   };
   
-  module.exports = {
+  export {
     createBoardFromInput,
     getBoardInput,
     showResult,

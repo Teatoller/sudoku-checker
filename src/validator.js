@@ -38,7 +38,7 @@ const isUnique = (array) => {
     return validateRows(board) && validateColumns(board) && validateGrids(board);
   };
   
-  module.exports = {
+  export {
     validateSudoku,
     validateRows,
     validateColumns,
