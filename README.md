@@ -23,8 +23,8 @@
 
 # Link to live site
 on the terminal run
-1. To test recursion `npx webpack --config webpack.config.js --mode development`
-2. To test closure code `npx webpack serve --open`
+1. `npx webpack --config webpack.config.js --mode development`
+2. `npx webpack serve --open`
 
 This will open your browser and load the application.
 Tou should see the text area and a button,
