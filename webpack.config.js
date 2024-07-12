@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
+  devtool: 'source-map', // Generate source maps
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -17,9 +18,9 @@ module.exports = {
     port: 9000,
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(), // Clean 'dist' directory before each build
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html', // Specify your own template file if needed
     }),
   ],
   module: {
