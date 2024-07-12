@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-// test.js
 import { validateSudoku } from '../src/validator';
 
 test('valid sudoku board', () => {

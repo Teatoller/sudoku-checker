@@ -1,20 +1,14 @@
-const createBoardFromInput = (input) => {
-    const rows = input.trim().split('\n');
-    return rows.map(row => row.split(' ').map(Number));
-  };
+export function getBoardInput() {
+    const input = document.getElementById('sudoku-input').value;
+    return input.trim().split('\n').map(row => row.split(' ').map(Number));
+  }
   
-  const getBoardInput = () => {
-    return document.getElementById('sudoku-input').value;
-  };
+  export function createBoardFromInput(input) {
+    return input;
+  }
   
-  const showResult = (isValid) => {
-    const result = document.getElementById('result');
-    result.textContent = isValid ? 'Valid Sudoku!' : 'Invalid Sudoku!';
-  };
-  
-  export {
-    createBoardFromInput,
-    getBoardInput,
-    showResult,
-  };
+  export function showResult(isValid) {
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = isValid ? 'Valid Sudoku!' : 'Invalid Sudoku!';
+  }
   
