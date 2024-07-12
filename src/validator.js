@@ -3,9 +3,7 @@ const isUnique = (array) => {
     return set.size === 9 && !set.has(0);
   };
   
-  const validateRows = (board) => {
-    return board.every(isUnique);
-  };
+  const validateRows = (board) => board.every(isUnique);
   
   const validateColumns = (board) => {
     for (let col = 0; col < 9; col++) {
@@ -34,14 +32,7 @@ const isUnique = (array) => {
     return true;
   };
   
-  const validateSudoku = (board) => {
+  export function validateSudoku(board) {
     return validateRows(board) && validateColumns(board) && validateGrids(board);
-  };
-  
-  export {
-    validateSudoku,
-    validateRows,
-    validateColumns,
-    validateGrids,
-  };
+  }
   
